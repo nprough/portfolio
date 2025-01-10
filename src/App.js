@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import HomeSection from './components/HomeSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='h-screen overflow-y-scroll snap-y snap-mandatory'>
+        <HomeSection />
+        <section className="h-screen snap-start">
+          <h1>Section</h1>
+        </section>
+        <section className="h-screen snap-start">
+          <h1>Section</h1>
+        </section>
+        <section className="h-screen snap-start">
+          <h1>Section</h1>
+        </section>
+      </div>
+    </>
   );
 }
 
