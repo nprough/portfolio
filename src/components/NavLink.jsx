@@ -1,11 +1,14 @@
+import { motion } from "framer-motion";
+
 const NavLink = ({ name, link }) => {
   return (
-    <a
+    <motion.a
+      href={"#" + link}
+      onTap={{ scale: 1.1 }}
       className="flex flex-col align-middle justify-center text-xl font-bold"
-      href={link}
     >
       {name}
-    </a>
+    </motion.a>
   );
 };
 
